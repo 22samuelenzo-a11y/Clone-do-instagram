@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InstaVibe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#"><i class="fa-brands fa-instagram"></i><span>InstaVibe</span></a>
+    <nav>
+      <a class="nav-link active" href="#inicio"><i class="fa-solid fa-house"></i><span>Início</span></a>
+      <a class="nav-link" href="#explorar"><i class="fa-regular fa-compass"></i><span>Explorar</span></a>
+      <a class="nav-link" href="#mensagens" id="navMessages"><i class="fa-brands fa-facebook-messenger"></i><span>Mensagens</span></a>
+      <a class="nav-link" href="#criar" id="navCreate"><i class="fa-regular fa-square-plus"></i><span>Criar publicação</span></a>
+      <a class="nav-link" href="#perfil"><i class="fa-regular fa-user"></i><span>Perfil</span></a>
+    </nav>
+    <div class="sidebar-bottom"><i class="fa-solid fa-bars"></i><span>Mais opções</span></div>
+  </aside>
+
+  <main class="main-content" id="inicio">
+    <section class="feed-column">
+      <div class="stories-panel">
+        <div class="stories" id="stories">
+          <button class="story add-story" data-story="Seu story"><span class="story-ring"><img src="https://d23jzdnitxn12c.cloudfront.net/a4fbb610ae877f872286c1947d7edb2a/v2_e198acb0-03b2-4fc8-8180-949c9e349a77.jpg" alt="Seu perfil"><b>+</b></span><small>Seu story</small></button>
+          <button class="story" data-story="Marina"><span class="story-ring"><img src="https://i.pravatar.cc/100?img=47" alt="Marina"></span><small>marina</small></button>
+          <button class="story" data-story="Lucas"><span class="story-ring"><img src="https://i.pravatar.cc/100?img=11" alt="Lucas"></span><small>lucas.s</small></button>
+          <button class="story" data-story="Ana"><span class="story-ring"><img src="https://i.pravatar.cc/100?img=44" alt="Ana"></span><small>ana clara</small></button>
+          <button class="story" data-story="Pedro"><span class="story-ring"><img src="https://i.pravatar.cc/100?img=13" alt="Pedro"></span><small>pedro_</small></button>
+          <button class="story" data-story="Julia"><span class="story-ring"><img src="https://i.pravatar.cc/100?img=49" alt="Julia"></span><small>julia</small></button>
+        </div>
+      </div>
+
+      <div class="feed-heading"><h2>Publicações</h2><span>Para você</span></div>
+      <div id="posts">
+        <article class="post">
+          <header class="post-header"><img class="avatar" src="https://d23jzdnitxn12c.cloudfront.net/a4fbb610ae877f872286c1947d7edb2a/v2_e198acb0-03b2-4fc8-8180-949c9e349a77.jpg" alt="Foto de perfil de Samuel"><div><strong>samuel</strong><small>Minha publicação</small></div><button class="more" aria-label="Mais opções">•••</button></header>
+          <img class="post-image" src="https://d23jzdnitxn12c.cloudfront.net/a4fbb610ae877f872286c1947d7edb2a/v2_e198acb0-03b2-4fc8-8180-949c9e349a77.jpg" alt="Publicação de Samuel">
+          <div class="post-actions"><button class="like-btn"><i class="fa-regular fa-heart"></i></button><button class="comment-focus"><i class="fa-regular fa-comment"></i></button><button class="share-btn"><i class="fa-regular fa-paper-plane"></i></button><button class="save-btn"><i class="fa-regular fa-bookmark"></i></button></div>
+          <div class="post-caption"><strong class="likes">0 curtidas</strong><p><strong>samuel</strong> Minha foto no InstaVibe! 📸</p><button class="view-comments">Ver comentários</button><small>AGORA</small></div>
+          <form class="comment-form"><input placeholder="Adicione um comentário..." aria-label="Comentário"><button>Publicar</button></form>
+        </article>
+        <article class="post">
+          <header class="post-header"><img class="avatar" src="https://i.pravatar.cc/100?img=11" alt=""><div><strong>lucas.s</strong><small>Santa Cruz do Piauí</small></div><button class="more" aria-label="Mais opções">•••</button></header>
+          <img class="post-image" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1000" alt="Paisagem de montanhas">
+          <div class="post-actions"><button class="like-btn"><i class="fa-regular fa-heart"></i></button><button class="comment-focus"><i class="fa-regular fa-comment"></i></button><button class="share-btn"><i class="fa-regular fa-paper-plane"></i></button><button class="save-btn"><i class="fa-regular fa-bookmark"></i></button></div>
+          <div class="post-caption"><strong class="likes">128 curtidas</strong><p><strong>lucas.s</strong> Um dia incrível para guardar na memória! 🌄</p><button class="view-comments">Ver todos os 12 comentários</button><small>HÁ 2 HORAS</small></div>
+          <form class="comment-form"><input placeholder="Adicione um comentário..." aria-label="Comentário"><button>Publicar</button></form>
+        </article>
+        <article class="post">
+          <header class="post-header"><img class="avatar" src="https://i.pravatar.cc/100?img=44" alt=""><div><strong>ana.clara</strong><small>Em casa</small></div><button class="more" aria-label="Mais opções">•••</button></header>
+          <img class="post-image" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1000" alt="Flores coloridas">
+          <div class="post-actions"><button class="like-btn"><i class="fa-regular fa-heart"></i></button><button class="comment-focus"><i class="fa-regular fa-comment"></i></button><button class="share-btn"><i class="fa-regular fa-paper-plane"></i></button><button class="save-btn"><i class="fa-regular fa-bookmark"></i></button></div>
+          <div class="post-caption"><strong class="likes">86 curtidas</strong><p><strong>ana.clara</strong> Pequenos detalhes, grandes momentos. 🌷</p><button class="view-comments">Ver todos os 5 comentários</button><small>HÁ 5 HORAS</small></div>
+          <form class="comment-form"><input placeholder="Adicione um comentário..." aria-label="Comentário"><button>Publicar</button></form>
+        </article>
+      </div>
+    </section>
+
+    <aside class="right-column">
+      <div class="my-profile"><img class="avatar large" src="https://d23jzdnitxn12c.cloudfront.net/a4fbb610ae877f872286c1947d7edb2a/v2_e198acb0-03b2-4fc8-8180-949c9e349a77.jpg" alt=""><div><strong>samuel</strong><small>Samuel</small></div><button class="blue-text">Mudar</button></div>
+      <div class="suggestion-title"><strong>Sugestões para você</strong><a href="#">Ver tudo</a></div>
+      <div class="suggestion"><img class="avatar" src="https://i.pravatar.cc/100?img=21" alt=""><div><strong>erlandro_</strong><small>Seguido por arthur</small></div><button class="blue-text">Seguir</button></div>
+      <div class="suggestion"><img class="avatar" src="https://i.pravatar.cc/100?img=32" alt=""><div><strong>enzo.dev</strong><small>Nova sugestão</small></div><button class="blue-text">Seguir</button></div>
+      <p class="footer-note">Sobre • Ajuda • Privacidade • Termos<br><br>© 2026 INSTAVIBE</p>
+    </aside>
+  </main>
+
+  <section class="messages-panel" id="mensagens" aria-label="Mensagens">
+    <header class="messages-header"><div><h2>Mensagens</h2><small>Converse com seus amigos</small></div><button id="closeMessages" class="icon-button" aria-label="Fechar mensagens"><i class="fa-solid fa-xmark"></i></button></header>
+    <div class="messages-layout">
+      <div class="chat-list">
+        <button class="chat-person selected" data-chat="Marina"><img class="avatar" src="https://i.pravatar.cc/100?img=47"><span><strong>Marina</strong><small>Oi! Tudo bem?</small></span><i class="fa-solid fa-circle"></i></button>
+        <button class="chat-person" data-chat="Lucas"><img class="avatar" src="https://i.pravatar.cc/100?img=11"><span><strong>Lucas</strong><small>Vamos jogar hoje?</small></span></button>
+        <button class="chat-person" data-chat="Ana Clara"><img class="avatar" src="https://i.pravatar.cc/100?img=44"><span><strong>Ana Clara</strong><small>Gostei da foto!</small></span></button>
+      </div>
+      <div class="chat-window">
+        <div class="chat-top"><img class="avatar" id="chatAvatar" src="https://i.pravatar.cc/100?img=47"><strong id="chatName">Marina</strong><small>Ativo agora</small></div>
+        <div class="chat-messages" id="chatMessages"><div class="bubble received">Oi! Tudo bem?</div><div class="bubble sent">Tudo sim! E você?</div></div>
+        <form class="message-form" id="messageForm"><input id="messageInput" placeholder="Envie uma mensagem..." autocomplete="off" required><button aria-label="Enviar mensagem"><i class="fa-solid fa-paper-plane"></i></button></form>
+      </div>
+    </div>
+  </section>
+
+  <dialog id="storyDialog" class="story-dialog"><button class="dialog-close" data-close="storyDialog">×</button><div class="story-progress"></div><div class="story-content"><img id="storyAvatar" src="" alt=""><h2 id="storyName"></h2><p>Compartilhando momentos especiais ✨</p></div></dialog>
+
+  <dialog id="createDialog" class="create-dialog">
+    <form id="createForm">
+      <header><button type="button" class="dialog-close" data-close="createDialog">×</button><h2>Criar publicação</h2><button class="blue-text" type="submit">Compartilhar</button></header>
+      <label for="imageUrl">Link da imagem</label><input id="imageUrl" type="url" placeholder="https://exemplo.com/foto.jpg" required>
+      <label for="captionInput">Escreva uma legenda</label><textarea id="captionInput" rows="4" placeholder="O que você está pensando?"></textarea>
+      <div class="preview" id="imagePreview">A prévia da imagem aparecerá aqui</div>
+    </form>
+  </dialog>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
